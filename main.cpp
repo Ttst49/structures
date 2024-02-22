@@ -1,5 +1,8 @@
 #include <iostream>
-#include "modules/point.h"
+#include "headers/point.h"
+#include "headers/liste.h"
+#include "headers/menu.h"
+
 using namespace std;
 
 
@@ -40,8 +43,15 @@ int usePointsMethods(){
     return 0;
 }
 
+[[maybe_unused]]
+int launchEmployeApp(){
+    liste l{};
+    init_liste(l);
+    menu(l);
+    return 0;
+}
 
 int main() {
-    usePointsMethods();
+    launchEmployeApp();
     return 0;
 }
