@@ -1,9 +1,7 @@
 #include <iostream>
+#include "point.h"
 using namespace std;
 
-struct point{
-    double x,y;
-};
 
 [[maybe_unused]]
 int pointUse(){
@@ -25,7 +23,25 @@ int pointUse(){
 
 }
 
+[[maybe_unused]]
+int usePointsMethods(){
+
+    point X{},Y{},Z{};
+    double d;
+    cout << "SAISIE DE X" << endl;
+    saisir_point(X);
+    cout << "SAISIE DE Y" << endl;
+    saisir_point(Y);
+    d = distance(X,Y);
+    cout << "La distance de X à Y est : " << d << endl;
+    milieu(X,Y,Z);
+    cout << "AFFICHAGE DU POINT Z" << endl;
+    afficher_point(Z);
+    return 0;
+}
+
+
 int main() {
-    pointUse();
+    usePointsMethods();
     return 0;
 }
