@@ -1,5 +1,5 @@
-#include "modules/point.h"
-#include "iostream"
+#include "../headers/point.h"
+#include <iostream>
 #include "cmath"
 
 using namespace std;
