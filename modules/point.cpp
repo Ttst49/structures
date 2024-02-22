@@ -1,4 +1,4 @@
-#include "point.h"
+#include "modules/point.h"
 #include "iostream"
 #include "cmath"
 
